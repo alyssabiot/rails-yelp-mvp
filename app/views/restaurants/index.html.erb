@@ -1,9 +1,11 @@
-<h1>Restaurants</h1>
+<div class="container padded">
+  <h1>Restaurants</h1>
 
-<%= link_to "Add a restaurant", new_restaurant_path %>
+  <%= link_to "Add a restaurant", new_restaurant_path %>
 
-<ul>
-  <% @restaurants.each do |resto| %>
-    <h2><%= link_to resto.name, restaurant_path(resto) %></h2>
-  <% end %>
-</ul>
+  <ul>
+    <% @restaurants.each do |resto| %>
+      <h2><%= link_to resto.name, restaurant_path(resto) %></h2>
+    <% end %>
+  </ul>
+</div>

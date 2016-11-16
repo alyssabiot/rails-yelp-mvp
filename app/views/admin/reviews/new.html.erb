@@ -1,6 +1,8 @@
-<h1>Add a review for <%= @restaurant.name %></h1>
-<%= simple_form_for [@restautant, @review], url: admin_restaurant_reviews_path do |f| %>
-  <%= f.input :content %>
-  <%= f.input :rating, collection: (0..5) %>
-  <%= f.submit 'Add' %>
-<% end %>
+<div class="container padded">
+  <h1>Add a review for <%= @restaurant.name %></h1>
+  <%= simple_form_for [@restautant, @review], url: admin_restaurant_reviews_path do |f| %>
+    <%= f.input :content %>
+    <%= f.input :rating, collection: (0..5) %>
+    <%= f.submit 'Add' %>
+  <% end %>
+</div>
